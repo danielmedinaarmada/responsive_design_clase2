@@ -1,0 +1,41 @@
+body{
+  background: gray;
+  font-family: Arial;
+}
+
+img  {
+  /*border: 10px solid gray;*/
+  transition: 3s;
+  opacity: 0;
+  object-fit: cover; /*toma la mejor dispocision de las imagenes qcon las medidas dadas*/
+  width: 100%;
+  /*sition: relative;
+  left:-40%;*/
+  transform: rotate(360deg);
+}
+
+img.b-loaded{
+  border-color:purple;
+  opacity: 1;
+  /*ft:0;*/
+  transform: rotate(0deg);
+}
+
+figure {
+  overflow: hidden;
+  /*border: 10px solid red;*/
+  background-image: url('../images/gears.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 700px;
+  margin:0 auto
+
+}
+
+
+figcaption {
+  background: white;
+  font-size: 18px;
+  padding: 15px 10px;
+  border-bottom: 5px solid lightgray;
+}
